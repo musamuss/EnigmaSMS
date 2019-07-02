@@ -92,10 +92,54 @@
                     <view key="view" contentMode="scaleToFill" id="OHQ-ow-MJO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3E-GM-z8q">
+                                <rect key="frame" x="144" y="428" width="126" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="IFE-5D-IcU"/>
+                                </constraints>
+                                <state key="normal" title="DECODE"/>
+                                <connections>
+                                    <action selector="ButtonAction:" destination="bVO-jc-5vp" eventType="touchUpInside" id="OOi-8E-Gmr"/>
+                                    <action selector="buttonDecode:" destination="W1i-NZ-pcF" eventType="touchUpInside" id="SN8-C2-ziH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liT-fm-4P4">
+                                <rect key="frame" x="20" y="533" width="374" height="250"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="enter your SMS" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZv-P2-HFK">
+                                <rect key="frame" x="20" y="114" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="id8-rg-pki"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="liT-fm-4P4" firstAttribute="top" secondItem="W3E-GM-z8q" secondAttribute="bottom" constant="25" id="4Xw-Jl-9R8"/>
+                            <constraint firstItem="DZv-P2-HFK" firstAttribute="leading" secondItem="liT-fm-4P4" secondAttribute="leading" id="H9t-YA-WA1"/>
+                            <constraint firstItem="zq3-7Z-yy6" firstAttribute="bottom" secondItem="liT-fm-4P4" secondAttribute="bottom" constant="30" id="KBA-v8-HOE"/>
+                            <constraint firstItem="W3E-GM-z8q" firstAttribute="top" secondItem="DZv-P2-HFK" secondAttribute="bottom" constant="64" id="N3b-c5-pHh"/>
+                            <constraint firstItem="W3E-GM-z8q" firstAttribute="centerX" secondItem="liT-fm-4P4" secondAttribute="centerX" id="VbH-xq-M4O"/>
+                            <constraint firstItem="DZv-P2-HFK" firstAttribute="trailing" secondItem="liT-fm-4P4" secondAttribute="trailing" id="eT1-BR-yVl"/>
+                            <constraint firstItem="DZv-P2-HFK" firstAttribute="leading" secondItem="OHQ-ow-MJO" secondAttribute="leadingMargin" id="ghB-Vl-jVN"/>
+                            <constraint firstItem="DZv-P2-HFK" firstAttribute="trailing" secondItem="OHQ-ow-MJO" secondAttribute="trailingMargin" id="wsh-XM-GRu"/>
+                            <constraint firstItem="W3E-GM-z8q" firstAttribute="leading" secondItem="zq3-7Z-yy6" secondAttribute="leading" constant="144" id="zqY-0a-GHq"/>
+                            <constraint firstItem="DZv-P2-HFK" firstAttribute="top" secondItem="zq3-7Z-yy6" secondAttribute="top" constant="70" id="ztX-N9-nr2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zq3-7Z-yy6"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="OBq-FU-BQJ"/>
+                    <connections>
+                        <outlet property="fieldDecode1" destination="DZv-P2-HFK" id="bbY-DX-VOT"/>
+                        <outlet property="fieldDecode2" destination="liT-fm-4P4" id="H5I-IW-qQ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hh8-Aj-Wyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

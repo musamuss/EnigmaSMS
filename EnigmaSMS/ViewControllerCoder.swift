@@ -13,10 +13,11 @@ class ViewControllerCoder: UIViewController {
   
     @IBOutlet weak var fieldOne: UITextField!
     @IBOutlet weak var fieldTwo: UILabel!
-    
     @IBAction func ButtonAction(_ sender: Any) {
         ButtonClicked()
     }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,9 +33,11 @@ class ViewControllerCoder: UIViewController {
         let encodedString = encodingEnigma.encode(fieldOne.text ?? "hello")
         fieldTwo.text = encodedString
         //print("Encoded string: ", encodedString)
-        //let decodedString = decodingEnigma.decode(encodedString)
+        //let decodedString = decodingEnigma.decode(fieldDecode1.text ?? "hello")
+       // fieldDecode2.text = decodedString
         
     }
+    
    
 
 }

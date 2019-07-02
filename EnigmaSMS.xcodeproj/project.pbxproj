@@ -24,7 +24,7 @@
 		84FFDDF322CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDF222CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift */; };
 		84FFDDF622CB851B002B83C1 /* EnigmaMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDF522CB851B002B83C1 /* EnigmaMachine.swift */; };
 		84FFDDFA22CB86E7002B83C1 /* ViewControllerCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDF922CB86E7002B83C1 /* ViewControllerCoder.swift */; };
-		84FFDDFC22CB86F8002B83C1 /* ViewControllerDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDFB22CB86F8002B83C1 /* ViewControllerDecoder.swift */; };
+		84FFDDFE22CBA001002B83C1 /* ViewControllerDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDFD22CBA001002B83C1 /* ViewControllerDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 		84FFDDF222CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAlphabetSpindleFactory.swift; sourceTree = "<group>"; };
 		84FFDDF522CB851B002B83C1 /* EnigmaMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaMachine.swift; sourceTree = "<group>"; };
 		84FFDDF922CB86E7002B83C1 /* ViewControllerCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCoder.swift; sourceTree = "<group>"; };
-		84FFDDFB22CB86F8002B83C1 /* ViewControllerDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDecoder.swift; sourceTree = "<group>"; };
+		84FFDDFD22CBA001002B83C1 /* ViewControllerDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 			children = (
 				84FFDDAA22CB7E97002B83C1 /* AppDelegate.swift */,
 				84FFDDF922CB86E7002B83C1 /* ViewControllerCoder.swift */,
-				84FFDDFB22CB86F8002B83C1 /* ViewControllerDecoder.swift */,
+				84FFDDFD22CBA001002B83C1 /* ViewControllerDecoder.swift */,
 				84FFDDEF22CB83A7002B83C1 /* Model */,
 				84FFDDEE22CB8370002B83C1 /* Protocols */,
 				84FFDDF422CB84ED002B83C1 /* Spidle */,
@@ -315,7 +315,7 @@
 			files = (
 				84FFDDF622CB851B002B83C1 /* EnigmaMachine.swift in Sources */,
 				84FFDDF322CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift in Sources */,
-				84FFDDFC22CB86F8002B83C1 /* ViewControllerDecoder.swift in Sources */,
+				84FFDDFE22CBA001002B83C1 /* ViewControllerDecoder.swift in Sources */,
 				84FFDDDB22CB8091002B83C1 /* Remappable.swift in Sources */,
 				84FFDDD922CB800C002B83C1 /* Mapping.swift in Sources */,
 				84FFDDFA22CB86E7002B83C1 /* ViewControllerCoder.swift in Sources */,
