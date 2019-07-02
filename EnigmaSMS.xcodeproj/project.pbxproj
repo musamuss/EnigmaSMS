@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FFDDAB22CB7E97002B83C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDAA22CB7E97002B83C1 /* AppDelegate.swift */; };
+		84FFDDB022CB7E97002B83C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FFDDAE22CB7E97002B83C1 /* Main.storyboard */; };
+		84FFDDB222CB7E98002B83C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FFDDB122CB7E98002B83C1 /* Assets.xcassets */; };
+		84FFDDB522CB7E98002B83C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FFDDB322CB7E98002B83C1 /* LaunchScreen.storyboard */; };
+		84FFDDC022CB7E98002B83C1 /* EnigmaSMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDBF22CB7E98002B83C1 /* EnigmaSMSTests.swift */; };
+		84FFDDCB22CB7E98002B83C1 /* EnigmaSMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDCA22CB7E98002B83C1 /* EnigmaSMSUITests.swift */; };
+		84FFDDD922CB800C002B83C1 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDD822CB800C002B83C1 /* Mapping.swift */; };
+		84FFDDDB22CB8091002B83C1 /* Remappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDDA22CB8091002B83C1 /* Remappable.swift */; };
+		84FFDDDD22CB80B4002B83C1 /* Reflector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDDC22CB80B4002B83C1 /* Reflector.swift */; };
+		84FFDDE722CB81C0002B83C1 /* Plugboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDE622CB81C0002B83C1 /* Plugboard.swift */; };
+		84FFDDE922CB8206002B83C1 /* SpindleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDE822CB8206002B83C1 /* SpindleConfiguration.swift */; };
+		84FFDDEB22CB8221002B83C1 /* SpindleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDEA22CB8221002B83C1 /* SpindleFactory.swift */; };
+		84FFDDED22CB8346002B83C1 /* Enigma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDEC22CB8346002B83C1 /* Enigma.swift */; };
+		84FFDDF122CB841A002B83C1 /* Rotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDF022CB841A002B83C1 /* Rotor.swift */; };
+		84FFDDF322CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDF222CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift */; };
+		84FFDDF622CB851B002B83C1 /* EnigmaMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDF522CB851B002B83C1 /* EnigmaMachine.swift */; };
+		84FFDDFA22CB86E7002B83C1 /* ViewControllerCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDF922CB86E7002B83C1 /* ViewControllerCoder.swift */; };
+		84FFDDFC22CB86F8002B83C1 /* ViewControllerDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFDDFB22CB86F8002B83C1 /* ViewControllerDecoder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84FFDDBC22CB7E98002B83C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FFDD9F22CB7E97002B83C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FFDDA622CB7E97002B83C1;
+			remoteInfo = EnigmaSMS;
+		};
+		84FFDDC722CB7E98002B83C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FFDD9F22CB7E97002B83C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FFDDA622CB7E97002B83C1;
+			remoteInfo = EnigmaSMS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84FFDDA722CB7E97002B83C1 /* EnigmaSMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnigmaSMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FFDDAA22CB7E97002B83C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84FFDDAF22CB7E97002B83C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84FFDDB122CB7E98002B83C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84FFDDB422CB7E98002B83C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84FFDDB622CB7E98002B83C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FFDDBB22CB7E98002B83C1 /* EnigmaSMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnigmaSMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FFDDBF22CB7E98002B83C1 /* EnigmaSMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaSMSTests.swift; sourceTree = "<group>"; };
+		84FFDDC122CB7E98002B83C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FFDDC622CB7E98002B83C1 /* EnigmaSMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnigmaSMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FFDDCA22CB7E98002B83C1 /* EnigmaSMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaSMSUITests.swift; sourceTree = "<group>"; };
+		84FFDDCC22CB7E98002B83C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FFDDD822CB800C002B83C1 /* Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
+		84FFDDDA22CB8091002B83C1 /* Remappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remappable.swift; sourceTree = "<group>"; };
+		84FFDDDC22CB80B4002B83C1 /* Reflector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflector.swift; sourceTree = "<group>"; };
+		84FFDDE622CB81C0002B83C1 /* Plugboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugboard.swift; sourceTree = "<group>"; };
+		84FFDDE822CB8206002B83C1 /* SpindleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpindleConfiguration.swift; sourceTree = "<group>"; };
+		84FFDDEA22CB8221002B83C1 /* SpindleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpindleFactory.swift; sourceTree = "<group>"; };
+		84FFDDEC22CB8346002B83C1 /* Enigma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enigma.swift; sourceTree = "<group>"; };
+		84FFDDF022CB841A002B83C1 /* Rotor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotor.swift; sourceTree = "<group>"; };
+		84FFDDF222CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAlphabetSpindleFactory.swift; sourceTree = "<group>"; };
+		84FFDDF522CB851B002B83C1 /* EnigmaMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaMachine.swift; sourceTree = "<group>"; };
+		84FFDDF922CB86E7002B83C1 /* ViewControllerCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCoder.swift; sourceTree = "<group>"; };
+		84FFDDFB22CB86F8002B83C1 /* ViewControllerDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDecoder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FFDDA422CB7E97002B83C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FFDDB822CB7E98002B83C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FFDDC322CB7E98002B83C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FFDD9E22CB7E97002B83C1 = {
+			isa = PBXGroup;
+			children = (
+				84FFDDA922CB7E97002B83C1 /* EnigmaSMS */,
+				84FFDDBE22CB7E98002B83C1 /* EnigmaSMSTests */,
+				84FFDDC922CB7E98002B83C1 /* EnigmaSMSUITests */,
+				84FFDDA822CB7E97002B83C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FFDDA822CB7E97002B83C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FFDDA722CB7E97002B83C1 /* EnigmaSMS.app */,
+				84FFDDBB22CB7E98002B83C1 /* EnigmaSMSTests.xctest */,
+				84FFDDC622CB7E98002B83C1 /* EnigmaSMSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FFDDA922CB7E97002B83C1 /* EnigmaSMS */ = {
+			isa = PBXGroup;
+			children = (
+				84FFDDAA22CB7E97002B83C1 /* AppDelegate.swift */,
+				84FFDDF922CB86E7002B83C1 /* ViewControllerCoder.swift */,
+				84FFDDFB22CB86F8002B83C1 /* ViewControllerDecoder.swift */,
+				84FFDDEF22CB83A7002B83C1 /* Model */,
+				84FFDDEE22CB8370002B83C1 /* Protocols */,
+				84FFDDF422CB84ED002B83C1 /* Spidle */,
+				84FFDDAE22CB7E97002B83C1 /* Main.storyboard */,
+				84FFDDB122CB7E98002B83C1 /* Assets.xcassets */,
+				84FFDDB322CB7E98002B83C1 /* LaunchScreen.storyboard */,
+				84FFDDB622CB7E98002B83C1 /* Info.plist */,
+			);
+			path = EnigmaSMS;
+			sourceTree = "<group>";
+		};
+		84FFDDBE22CB7E98002B83C1 /* EnigmaSMSTests */ = {
+			isa = PBXGroup;
+			children = (
+				84FFDDBF22CB7E98002B83C1 /* EnigmaSMSTests.swift */,
+				84FFDDC122CB7E98002B83C1 /* Info.plist */,
+			);
+			path = EnigmaSMSTests;
+			sourceTree = "<group>";
+		};
+		84FFDDC922CB7E98002B83C1 /* EnigmaSMSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84FFDDCA22CB7E98002B83C1 /* EnigmaSMSUITests.swift */,
+				84FFDDCC22CB7E98002B83C1 /* Info.plist */,
+			);
+			path = EnigmaSMSUITests;
+			sourceTree = "<group>";
+		};
+		84FFDDEE22CB8370002B83C1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84FFDDDA22CB8091002B83C1 /* Remappable.swift */,
+				84FFDDEA22CB8221002B83C1 /* SpindleFactory.swift */,
+				84FFDDEC22CB8346002B83C1 /* Enigma.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84FFDDEF22CB83A7002B83C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84FFDDD822CB800C002B83C1 /* Mapping.swift */,
+				84FFDDE822CB8206002B83C1 /* SpindleConfiguration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84FFDDF422CB84ED002B83C1 /* Spidle */ = {
+			isa = PBXGroup;
+			children = (
+				84FFDDDC22CB80B4002B83C1 /* Reflector.swift */,
+				84FFDDF022CB841A002B83C1 /* Rotor.swift */,
+				84FFDDE622CB81C0002B83C1 /* Plugboard.swift */,
+				84FFDDF222CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift */,
+				84FFDDF522CB851B002B83C1 /* EnigmaMachine.swift */,
+			);
+			path = Spidle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FFDDA622CB7E97002B83C1 /* EnigmaSMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FFDDCF22CB7E98002B83C1 /* Build configuration list for PBXNativeTarget "EnigmaSMS" */;
+			buildPhases = (
+				84FFDDA322CB7E97002B83C1 /* Sources */,
+				84FFDDA422CB7E97002B83C1 /* Frameworks */,
+				84FFDDA522CB7E97002B83C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnigmaSMS;
+			productName = EnigmaSMS;
+			productReference = 84FFDDA722CB7E97002B83C1 /* EnigmaSMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84FFDDBA22CB7E98002B83C1 /* EnigmaSMSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FFDDD222CB7E98002B83C1 /* Build configuration list for PBXNativeTarget "EnigmaSMSTests" */;
+			buildPhases = (
+				84FFDDB722CB7E98002B83C1 /* Sources */,
+				84FFDDB822CB7E98002B83C1 /* Frameworks */,
+				84FFDDB922CB7E98002B83C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FFDDBD22CB7E98002B83C1 /* PBXTargetDependency */,
+			);
+			name = EnigmaSMSTests;
+			productName = EnigmaSMSTests;
+			productReference = 84FFDDBB22CB7E98002B83C1 /* EnigmaSMSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84FFDDC522CB7E98002B83C1 /* EnigmaSMSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FFDDD522CB7E98002B83C1 /* Build configuration list for PBXNativeTarget "EnigmaSMSUITests" */;
+			buildPhases = (
+				84FFDDC222CB7E98002B83C1 /* Sources */,
+				84FFDDC322CB7E98002B83C1 /* Frameworks */,
+				84FFDDC422CB7E98002B83C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84FFDDC822CB7E98002B83C1 /* PBXTargetDependency */,
+			);
+			name = EnigmaSMSUITests;
+			productName = EnigmaSMSUITests;
+			productReference = 84FFDDC622CB7E98002B83C1 /* EnigmaSMSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FFDD9F22CB7E97002B83C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = musamuss;
+				TargetAttributes = {
+					84FFDDA622CB7E97002B83C1 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					84FFDDBA22CB7E98002B83C1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 84FFDDA622CB7E97002B83C1;
+					};
+					84FFDDC522CB7E98002B83C1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 84FFDDA622CB7E97002B83C1;
+					};
+				};
+			};
+			buildConfigurationList = 84FFDDA222CB7E97002B83C1 /* Build configuration list for PBXProject "EnigmaSMS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FFDD9E22CB7E97002B83C1;
+			productRefGroup = 84FFDDA822CB7E97002B83C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FFDDA622CB7E97002B83C1 /* EnigmaSMS */,
+				84FFDDBA22CB7E98002B83C1 /* EnigmaSMSTests */,
+				84FFDDC522CB7E98002B83C1 /* EnigmaSMSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FFDDA522CB7E97002B83C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FFDDB522CB7E98002B83C1 /* LaunchScreen.storyboard in Resources */,
+				84FFDDB222CB7E98002B83C1 /* Assets.xcassets in Resources */,
+				84FFDDB022CB7E97002B83C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FFDDB922CB7E98002B83C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FFDDC422CB7E98002B83C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FFDDA322CB7E97002B83C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FFDDF622CB851B002B83C1 /* EnigmaMachine.swift in Sources */,
+				84FFDDF322CB849A002B83C1 /* SmallAlphabetSpindleFactory.swift in Sources */,
+				84FFDDFC22CB86F8002B83C1 /* ViewControllerDecoder.swift in Sources */,
+				84FFDDDB22CB8091002B83C1 /* Remappable.swift in Sources */,
+				84FFDDD922CB800C002B83C1 /* Mapping.swift in Sources */,
+				84FFDDFA22CB86E7002B83C1 /* ViewControllerCoder.swift in Sources */,
+				84FFDDAB22CB7E97002B83C1 /* AppDelegate.swift in Sources */,
+				84FFDDF122CB841A002B83C1 /* Rotor.swift in Sources */,
+				84FFDDEB22CB8221002B83C1 /* SpindleFactory.swift in Sources */,
+				84FFDDED22CB8346002B83C1 /* Enigma.swift in Sources */,
+				84FFDDDD22CB80B4002B83C1 /* Reflector.swift in Sources */,
+				84FFDDE722CB81C0002B83C1 /* Plugboard.swift in Sources */,
+				84FFDDE922CB8206002B83C1 /* SpindleConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FFDDB722CB7E98002B83C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FFDDC022CB7E98002B83C1 /* EnigmaSMSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FFDDC222CB7E98002B83C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FFDDCB22CB7E98002B83C1 /* EnigmaSMSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84FFDDBD22CB7E98002B83C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FFDDA622CB7E97002B83C1 /* EnigmaSMS */;
+			targetProxy = 84FFDDBC22CB7E98002B83C1 /* PBXContainerItemProxy */;
+		};
+		84FFDDC822CB7E98002B83C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FFDDA622CB7E97002B83C1 /* EnigmaSMS */;
+			targetProxy = 84FFDDC722CB7E98002B83C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84FFDDAE22CB7E97002B83C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FFDDAF22CB7E97002B83C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84FFDDB322CB7E98002B83C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FFDDB422CB7E98002B83C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84FFDDCD22CB7E98002B83C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84FFDDCE22CB7E98002B83C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FFDDD022CB7E98002B83C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnigmaSMS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = musa.EnigmaSMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84FFDDD122CB7E98002B83C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnigmaSMS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = musa.EnigmaSMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84FFDDD322CB7E98002B83C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnigmaSMSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = musa.EnigmaSMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnigmaSMS.app/EnigmaSMS";
+			};
+			name = Debug;
+		};
+		84FFDDD422CB7E98002B83C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnigmaSMSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = musa.EnigmaSMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnigmaSMS.app/EnigmaSMS";
+			};
+			name = Release;
+		};
+		84FFDDD622CB7E98002B83C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnigmaSMSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = musa.EnigmaSMSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnigmaSMS;
+			};
+			name = Debug;
+		};
+		84FFDDD722CB7E98002B83C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EnigmaSMSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = musa.EnigmaSMSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnigmaSMS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FFDDA222CB7E97002B83C1 /* Build configuration list for PBXProject "EnigmaSMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FFDDCD22CB7E98002B83C1 /* Debug */,
+				84FFDDCE22CB7E98002B83C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FFDDCF22CB7E98002B83C1 /* Build configuration list for PBXNativeTarget "EnigmaSMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FFDDD022CB7E98002B83C1 /* Debug */,
+				84FFDDD122CB7E98002B83C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FFDDD222CB7E98002B83C1 /* Build configuration list for PBXNativeTarget "EnigmaSMSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FFDDD322CB7E98002B83C1 /* Debug */,
+				84FFDDD422CB7E98002B83C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FFDDD522CB7E98002B83C1 /* Build configuration list for PBXNativeTarget "EnigmaSMSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FFDDD622CB7E98002B83C1 /* Debug */,
+				84FFDDD722CB7E98002B83C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FFDD9F22CB7E97002B83C1 /* Project object */;
+}

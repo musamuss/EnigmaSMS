@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ijn-ru-YgX">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hUi-mA-2cV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ijn-ru-YgX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2HK-cy-Ojw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bVO-jc-5vp" kind="relationship" relationship="viewControllers" id="YpK-Ne-hop"/>
+                        <segue destination="W1i-NZ-pcF" kind="relationship" relationship="viewControllers" id="Gh6-8W-IlG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFC-HZ-iWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="19"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="PmC-PU-1JJ">
+            <objects>
+                <viewController id="bVO-jc-5vp" customClass="ViewControllerCoder" customModule="EnigmaSMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="My5-HK-S4s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFf-18-A5I">
+                                <rect key="frame" x="144" y="408" width="127" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6ie-8C-uR5"/>
+                                </constraints>
+                                <state key="normal" title="ENCODE"/>
+                                <connections>
+                                    <action selector="ButtonAction:" destination="bVO-jc-5vp" eventType="touchUpInside" id="J44-14-JSs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMh-za-uRr">
+                                <rect key="frame" x="20" y="513" width="374" height="250"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="enter your SMS" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y51-uZ-j6Q">
+                                <rect key="frame" x="20" y="94" width="374" height="250"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YFf-18-A5I" firstAttribute="centerX" secondItem="uMh-za-uRr" secondAttribute="centerX" id="6n6-nX-E9f"/>
+                            <constraint firstItem="y51-uZ-j6Q" firstAttribute="leading" secondItem="My5-HK-S4s" secondAttribute="leadingMargin" id="7dd-dS-9hf"/>
+                            <constraint firstItem="y51-uZ-j6Q" firstAttribute="top" secondItem="nsb-6p-NZI" secondAttribute="top" constant="50" id="HhE-K1-pnj"/>
+                            <constraint firstItem="y51-uZ-j6Q" firstAttribute="trailing" secondItem="My5-HK-S4s" secondAttribute="trailingMargin" id="IXj-Ey-Kzg"/>
+                            <constraint firstItem="YFf-18-A5I" firstAttribute="top" secondItem="y51-uZ-j6Q" secondAttribute="bottom" constant="64" id="NRl-92-Cn2"/>
+                            <constraint firstItem="uMh-za-uRr" firstAttribute="top" secondItem="YFf-18-A5I" secondAttribute="bottom" constant="25" id="ZzK-qO-zUa"/>
+                            <constraint firstItem="nsb-6p-NZI" firstAttribute="bottom" secondItem="uMh-za-uRr" secondAttribute="bottom" constant="50" id="afi-bC-fhV"/>
+                            <constraint firstItem="y51-uZ-j6Q" firstAttribute="trailing" secondItem="uMh-za-uRr" secondAttribute="trailing" id="fkC-dd-IEi"/>
+                            <constraint firstItem="y51-uZ-j6Q" firstAttribute="leading" secondItem="uMh-za-uRr" secondAttribute="leading" id="wEf-MP-0Fy"/>
+                            <constraint firstItem="YFf-18-A5I" firstAttribute="leading" secondItem="nsb-6p-NZI" secondAttribute="leading" constant="144" id="wof-h6-by2"/>
+                            <constraint firstItem="YFf-18-A5I" firstAttribute="centerY" secondItem="My5-HK-S4s" secondAttribute="centerY" id="wqo-ea-4sa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nsb-6p-NZI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Eee-Ud-2Wa"/>
+                    <connections>
+                        <outlet property="fieldOne" destination="y51-uZ-j6Q" id="z1E-I5-eiQ"/>
+                        <outlet property="fieldTwo" destination="uMh-za-uRr" id="B93-lK-28j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dz3-1V-lsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430.4347826086957" y="-414.50892857142856"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="uSb-fn-bMw">
+            <objects>
+                <viewController id="W1i-NZ-pcF" customClass="ViewControllerDecoder" customModule="EnigmaSMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHQ-ow-MJO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zq3-7Z-yy6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="OBq-FU-BQJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hh8-Aj-Wyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="341"/>
+        </scene>
+    </scenes>
+</document>
